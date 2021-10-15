@@ -10,9 +10,6 @@ function App() {
           <nav>
             <ul>
               <li>
-                <Link to="/HomePage">Home Page</Link>
-              </li>
-              <li>
                 <Link to="/about">About</Link>
               </li>
               <li>
@@ -21,9 +18,6 @@ function App() {
             </ul>
           </nav>
           <Switch>
-            <Route path="/HomePage">
-              <HomePage />
-            </Route>
             <Route exact path="/About" component={About} />
             <Route exact path="/Home" component={Home} />
           </Switch>
@@ -31,10 +25,6 @@ function App() {
       </Switch>
     </Router>
   );
-}
-
-function HomePage() {
-  return <h1>Home Page</h1>
 }
 
 export default App;
