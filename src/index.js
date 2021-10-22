@@ -1,17 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Header from './js/Header';
+import Icon from './js/Icon';
+import Text from './js/Text';
+import Body from './js/Body';
 import reportWebVitals from './reportWebVitals';
+import city1 from './image/new york.jpg';
+import city2 from './image/San francisco.jpg';
+import city3 from './image/los-angeles.jpg';
+import city4 from './image/washington DC.jpg';
+import Footer from './js/Footer'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+var footer = (
+    <div>
+        <Footer image={city1} cityName="New York City"/>
+        <Footer image={city2} cityName="San Francisco"/>
+        <Footer image={city3} cityName="Los Angeles"/>
+        <Footer image={city4} cityName="Washington DC"/>
+    </div>
+)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+ReactDOM.render(<Header />,document.getElementById('root'));
+ReactDOM.render(<Icon />,document.getElementById('icon'));
+ReactDOM.render(<Text />,document.getElementById('text'));
+ReactDOM.render(<Body />,document.getElementById('body'));
+ReactDOM.render(<footer />,document.getElementById('footer'));
+
 reportWebVitals();

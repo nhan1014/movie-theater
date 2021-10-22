@@ -1,6 +1,7 @@
-import repair from './image/repair.png';
-import spares from './image/spares.png';
-import sales from './image/sales.png';
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import repair from '../../src/image/repair.png';
+import spares from '../../src/image/spares.png';
+import sales from '../../src/image/sales.png';
 
 function App() {
   return (
